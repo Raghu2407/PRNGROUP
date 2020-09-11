@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="Wow_themes">
+
+	<!-- Favicons - Touch Icons -->
+
+	<link rel="apple-touch-icon" href="wp-content/themes/builder/images/apple-touch-icon.html">
+	<link rel="apple-touch-icon" sizes="72x72" href="wp-content/themes/builder/images/apple-touch-icon-72x72.html">
+	<link rel="apple-touch-icon" sizes="114x114" href="wp-content/themes/builder/images/apple-touch-icon-114x114.html">
+
+
+	<script src="http://drninfra.com/wp/wp-content/themes/builder/js/html5shiv.js"></script>
+	<script src="http://drninfra.com/wp/wp-content/themes/builder/js/respond.min.js"></script>
+
+
+	<title>PRN Groups</title>
+	<meta name="generator" content="Wow-Themes.com" />
+	<link rel="alternate" type="application/rss+xml" title="PRN Groups &raquo; Feed" href="index.php/feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="PRN Groups &raquo; Comments Feed"
+		href="index.php/comments/feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="PRN Groups &raquo; Home Comments Feed"
+		href="index.php/home/feed/index.html" />
+	<script type="text/javascript">
+		window._wpemojiSettings = {
+			"baseUrl": "http:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+			"ext": ".png",
+			"source": {
+				"concatemoji": "http:\/\/drninfra.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.24"
+			}
+		};
+		! function (a, b, c) {
+			function d(a) {
+				var c = b.createElement("canvas"),
+					d = c.getContext && c.getContext("2d");
+				return d && d.fillText ? (d.textBaseline = "top", d.font = "600 32px Arial", "flag" === a ? (d.fillText(String
+					.fromCharCode(55356, 56812, 55356, 56807), 0, 0), c.toDataURL().length > 3e3) : (d.fillText(String
+					.fromCharCode(55357, 56835), 0, 0), 0 !== d.getImageData(16, 16, 1, 1).data[0])) : !1
+			}
+
+			function e(a) {
+				var c = b.createElement("script");
+				c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+			}
+			var f, g;
+			c.supports = {
+				simple: d("simple"),
+				flag: d("flag")
+			}, c.DOMReady = !1, c.readyCallback = function () {
+				c.DOMReady = !0
+			}, c.supports.simple && c.supports.flag || (g = function () {
+					c.readyCallback()
+				}, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !
+				1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () {
+					"complete" === b.readyState && c.readyCallback()
+				})), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f
+					.wpemoji)))
+		}(window, document, window._wpemojiSettings);
+	</script>
+	<style type="text/css">
+		@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+		@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900);
+
+
+		#myPageContent,
+		section {
+			height: 100% !important;
+			width: 100% !important;
+		}
+
+
+		/* Slider */
+		#textSlider.row {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100% !important;
+		}
+
+		#textSlider div {
+			color: #FFF;
+			font-family: 'Lato', sans-serif;
+			text-transform: uppercase;
+		}
+
+		.iamCol {
+			text-align: right;
+			float: left;
+			font-weight: 300;
+			font-size: 30pt;
+		}
+
+		.iamCol p:nth-child(2) {
+			margin-top: -20pt !important;
+		}
+
+		.slideCol {
+			text-align: left;
+			overflow: hidden;
+			font-weight: 900;
+			font-size: 70pt;
+			display: block;
+			white-space: nowrap;
+		}
+
+		.slideCol p {
+			margin: 0px !important;
+		}
+
+		.scroller {
+			height: 70pt;
+			line-height: 70pt;
+			overflow: hidden;
+		}
+
+		.scroller .inner {
+			animation: 10s normal infinite running scroll;
+		}
+
+		@keyframes scroll {
+			0% {
+				margin-top: 0px;
+			}
+
+			15% {
+				margin-top: 0px;
+			}
+
+			25% {
+				margin-top: -70pt;
+			}
+
+			40% {
+				margin-top: -70pt;
+			}
+
+			50% {
+				margin-top: -140pt;
+			}
+
+			65% {
+				margin-top: -140pt;
+			}
+
+			75% {
+				margin-top: -210pt;
+			}
+
+			90% {
+				margin-top: -210pt;
+			}
+
+			100% {
+				margin-top: 0px;
+			}
+		}
+
+
+		/*==========  Mobile First Method  ==========*/
+
+		/* Custom, iPhone Retina */
+		@media only screen and (min-width : 320px) and (max-width : 479px) {
+			#textSlider.row {
+				margin-right: 0px !important;
+				margin-left: 0px !important;
+			}
+
+			.iamCol {
+				text-align: center;
+				font-size: 20pt;
+			}
+
+			.iamCol p {
+				display: inline !important;
+			}
+
+			.slideCol {
+				font-size: 25pt;
+				text-align: center;
+				margin-top: -20px;
+			}
+		}
+
+		/* Extra Small Devices, Phones */
+		@media only screen and (min-width : 480px) and (max-width : 765px) {
+			#textSlider.row {
+				margin-right: 0px !important;
+				margin-left: 0px !important;
+			}
+
+			.iamCol {
+				text-align: center;
+				font-size: 25pt;
+			}
+
+			.iamCol p {
+				display: inline !important;
+			}
+
+			.slideCol {
+				font-size: 38pt;
+				text-align: center;
+				margin-top: -20px;
+			}
+		}
+
+		/* Small Devices, Tablets */
+		@media only screen and (min-width : 768px) and (max-width : 992px) {
+			#textSlider.row {
+				margin-right: 0px !important;
+				margin-left: 0px !important;
+			}
+
+			.iamCol {
+				text-align: center;
+				font-size: 30pt;
+			}
+
+			.iamCol p {
+				display: inline !important;
+			}
+
+			.slideCol {
+				font-size: 50pt;
+				text-align: center;
+				margin-top: 5px;
+			}
+		}
+
+		/* Medium Devices, Desktops */
+		@media only screen and (min-width : 992px) and (max-width : 1200px) {
+			#textSlider.row {
+				margin-right: 0px !important;
+				margin-left: 0px !important;
+			}
+
+			.iamCol {
+				text-align: right;
+				font-size: 30pt;
+			}
+
+			.slideCol {
+				font-size: 55pt;
+				text-align: left;
+			}
+		}
+
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='flipbook_style-css'
+		href='wp-content/plugins/real3d-flipbook/css/flipbook.styleb8f6.css?ver=2.8.0.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='font_awesome-css'
+		href='wp-content/plugins/real3d-flipbook/css/font-awesomeb8f6.css?ver=2.8.0.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='rs-plugin-settings-css'
+		href='wp-content/plugins/revslider/rs-plugin/css/settings1dc6.css?ver=4.6.5' type='text/css' media='all' />
+	<style id='rs-plugin-settings-inline-css' type='text/css'>
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902
+		}
+
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902
+		}
+
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902
+		}
+	</style>
+	<link rel='stylesheet' id='Pt-sans-css'
+		href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C400italic%2C700%2C700italic&amp;ver=4.3.24'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='open-sans-css'
+		href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.3.24'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='builder-extralayers-css' href='wp-content/themes/builder/css/extralayers62ea.css?ver=1.2'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css'
+		href='wp-content/plugins/js_composer/assets/lib/font-awesome/css/font-awesome.mind22c.css?ver=4.4.4'
+		type='text/css' media='screen' />
+	<link rel='stylesheet' id='builder-prettyphoto-css' href='wp-content/themes/builder/css/prettyPhoto62ea.css?ver=1.2'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='builder-bootstrap-css' href='wp-content/themes/builder/css/bootstrap62ea.css?ver=1.2'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='builder-owl-carousel-css'
+		href='wp-content/themes/builder/css/owl-carousel62ea.css?ver=1.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='custom-style-css' href='wp-content/themes/builder/css/custom62ea.css?ver=1.2'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='builder-bootstrap-min-css'
+		href='wp-content/themes/builder/css/bootstrap.min62ea.css?ver=1.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='main_style-css' href='wp-content/themes/builder/style62ea.css?ver=1.2' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='main-style-css' href='wp-content/themes/builder/style62ea.css?ver=1.2' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='sh_google_custom_font-css'
+		href='http://fonts.googleapis.com/css?family=Raleway%3A400%2C300%2C600%2C700%2C800&amp;ver=4.3.24'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='js_composer_front-css'
+		href='wp-content/plugins/js_composer/assets/css/js_composerd22c.css?ver=4.4.4' type='text/css' media='all' />
+	<script type='text/javascript' src='wp-includes/js/jquery/jqueryc1d8.js?ver=1.11.3'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+	<script type='text/javascript' src='wp-content/plugins/real3d-flipbook/js/flipbook.minb8f6.js?ver=2.8.0.2'></script>
+	<script type='text/javascript' src='wp-content/plugins/real3d-flipbook/js/embedb8f6.js?ver=2.8.0.2'></script>
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+	<meta name="generator" content="WordPress 4.3.24" />
+	<link rel='canonical' href='index.html' />
+	<link rel='shortlink' href='index.html' />
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			// CUSTOM AJAX CONTENT LOADING FUNCTION
+			var ajaxRevslider = function (obj) {
+
+				// obj.type : Post Type
+				// obj.id : ID of Content to Load
+				// obj.aspectratio : The Aspect Ratio of the Container / Media
+				// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+
+				var content = "";
+
+				data = {};
+
+				data.action = 'revslider_ajax_call_front';
+				data.client_action = 'get_slider_html';
+				data.token = '6ff07ad996';
+				data.type = obj.type;
+				data.id = obj.id;
+				data.aspectratio = obj.aspectratio;
+
+				// SYNC AJAX REQUEST
+				jQuery.ajax({
+					type: "post",
+					url: "http://drninfra.com/wp/wp-admin/admin-ajax.php",
+					dataType: 'json',
+					data: data,
+					async: false,
+					success: function (ret, textStatus, XMLHttpRequest) {
+						if (ret.success == true)
+							content = ret.data;
+					},
+					error: function (e) {
+						console.log(e);
+					}
+				});
+
+				// FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+				return content;
+			};
+
+			// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+			var ajaxRemoveRevslider = function (obj) {
+				return jQuery(obj.selector + " .rev_slider").revkill();
+			};
+
+			// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+			var extendessential = setInterval(function () {
+				if (jQuery.fn.tpessential != undefined) {
+					clearInterval(extendessential);
+					if (typeof (jQuery.fn.tpessential.defaults) !== 'undefined') {
+						jQuery.fn.tpessential.defaults.ajaxTypes.push({
+							type: "revslider",
+							func: ajaxRevslider,
+							killfunc: ajaxRemoveRevslider,
+							openAnimationSpeed: 0.3
+						});
+						// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+						// func: the Function Name which is Called once the Item with the Post Type has been clicked
+						// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+						// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+					}
+				}
+			}, 30);
+		});
+	</script>
+	<script type="text/javascript">
+		if (ajaxurl === undefined) var ajaxurl = "wp-admin/admin-ajax.html";
+	</script>
+	<style type="text/css">
+		body,
+		p {
+			font-family: Raleway !important;
+			color: #686868 !important;
+		}
+
+		h1 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+
+		h2 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+
+		h3 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+
+		h4 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+
+		h5 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+
+		h6 {
+			font-family: Raleway !important;
+			color: #291470 !important;
+		}
+	</style>
+
+	<style>
+		.shop_desc h2,
+		.shop_meta,
+		.shop-rating i:hover,
+		.shop_meta strong,
+		.price,
+		a,
+		a.readmore,
+		li.social-icons ul li a,
+		#topbar p i,
+		.desc:hover .butto i,
+		.pager li a,
+		.pagination li a,
+		.pagination>li>span.page-numbers,
+		#colorful-tab .nav-tabs>li>a:hover .bubble,
+		#colorful-tab .nav-tabs>li>a:focus .bubble,
+		#colorful-tab .nav-tabs>li.active>a .bubble,
+		#colorful-tab .nav-tabs>li.active>a:hover .bubble,
+		#colorful-tab .nav-tabs>li.active>a:focus .bubble,
+		.btn-default,
+		.breadcrumb>li+li:before,
+		.rating i,
+		.section-title h3 span,
+		div.bhoechie-tab-menu div.list-group>a .glyphicon,
+		div.bhoechie-tab-menu div.list-group>a .fa,
+		.media-heading .pull-right,
+		.contact_details i,
+		.meta span i,
+		.star-rating,
+		.woocommerce .star-rating::before,
+		.woocommerce-page .star-rating:before,
+		.woocommerce #sidebar ul li .star-rating,
+		.woocommerce #sidebar ul li .amount,
+		.woocommerce .woocommerce-product-rating .star-rating {
+			color: #291470
+		}
+
+		.portfolio-filter li a.active,
+		.portfolio-filter li a:hover,
+		.portfolio-filter li a:focus,
+		.portfolio-filter li a:active,
+		li.social-icons ul li.cartbutton .bubble,
+		li.social-icons ul li:hover,
+		.navbar-default .navbar-nav>.open>a,
+		.navbar-default .navbar-nav>.open>a:focus,
+		.navbar-default .navbar-nav>.open>a:hover,
+		.navbar-default .navbar-nav>li a:focus,
+		.navbar-default .navbar-nav>li a:hover,
+		.navbar-default .navbar-nav>.active>a,
+		.navbar-default .navbar-nav>.active>a:focus,
+		.navbar-default .navbar-nav>.active>a:hover,
+		.nav.navbar-nav .current-menu-item.active>a,
+		.button.alt.btn.btn-primary:disabled,
+		.dmtop,
+		.client:hover,
+		.list-group-item.active,
+		.list-group-item.active:focus,
+		.list-group-item.active:hover,
+		div.bhoechie-tab-menu div.list-group>a.active,
+		div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+		div.bhoechie-tab-menu div.list-group>a.active .fa,
+		.woocommerce .form-submit #submit {
+			background-color: #291470;
+		}
+
+		#colorful-tab .nav-tabs>li>a:hover,
+		#colorful-tab .nav-tabs>li>a:focus,
+		#colorful-tab .nav-tabs>li.active>a,
+		#colorful-tab .nav-tabs>li.active>a:hover,
+		#colorful-tab .nav-tabs>li.active>a:focus,
+		.control-top .owl-controls .owl-nav [class*="owl-"]:hover,
+		#accordion-first .accordion-heading .accordion-toggle>em:hover,
+		#accordion-first .accordion-heading .accordion-toggle>em.fa-arrow-right,
+		.desc .butto,
+		.item:hover .desc,
+		.buttons,
+		.btn-primary,
+		.table>thead>tr>th,
+		.pager li a:hover,
+		.pagination li a:hover,
+		.owl-theme .owl-dots .owl-dot.active span,
+		.owl-theme .owl-dots .owl-dot:hover span,
+		.client.active,
+		.colorful {
+			background-color: #291470;
+		}
+
+		.desc .butto,
+		.item:hover .desc,
+		.buttons,
+		.btn-primary,
+		.table>thead>tr>th,
+		.pager li a:hover,
+		.pagination li a:hover,
+		#colorful-tab .nav-tabs>li>a:hover,
+		#colorful-tab .nav-tabs>li>a:focus,
+		#colorful-tab .nav-tabs>li.active>a,
+		#colorful-tab .nav-tabs>li.active>a:hover,
+		#colorful-tab .nav-tabs>li.active>a:focus,
+		.control-top .owl-controls .owl-nav [class*="owl-"]:hover,
+		#accordion-first .accordion-heading .accordion-toggle>em:hover,
+		#accordion-first .accordion-heading .accordion-toggle>em.fa-arrow-right,
+		.list-group-item.active,
+		.list-group-item.active:focus,
+		.list-group-item.active:hover,
+		.woocommerce .form-submit #submit {
+			border-color: #291470;
+		}
+
+		div.bhoechie-tab-menu div.list-group>a.active,
+		div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+		div.bhoechie-tab-menu div.list-group>a.active .fa {
+			background-image: #129cf4;
+		}
+
+		div.bhoechie-tab-menu div.list-group>a.active:after {
+			border-left-color: #291470
+		}
+
+		#colorful-tab .nav-tabs li:hover:after,
+		#colorful-tab .nav-tabs li:focus:after,
+		#colorful-tab .nav-tabs li.active:after {
+			border-top-color: #291470
+		}
+		.list-group-item {
+    position: relative;
+    display: flex;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+	</style>
+	<style type="text/css">
+		.recentcomments a {
+			display: inline !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	</style>
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://drninfra.com/wp/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><noscript>
+		<style>
+			.wpb_animate_when_almost_visible {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body
+	class="home page page-id-9 page-template page-template-tpl-visual_composer page-template-tpl-visual_composer-php customize-support wpb-js-composer js-comp-ver-4.4.4 vc_responsive">
+
+	<div id="wrapper">
+
+
+		<header class="header clearfix">
+			<div class="container-fluid">
+				<nav id="jtheader" class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+
+						<a class="navbar-brand" title="PRN Groups" href="http://drninfra.com/wp">
+							<img src="wp-content/uploads/2015/08/logo-large.png" alt="PRN Groups" width="auto"
+								height="100">
+						</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li id="menu-item-337"
+								class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item menu-item-337 active">
+								<a title="Home" href="index.html">Home</a></li>
+							<li id="menu-item-514"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-514 dropdown">
+								<a title="About Us" href="#" data-toggle="dropdown" class="dropdown-toggle disabled"
+									aria-haspopup="true">About Us <span class="caret"></span></a>
+								<ul role="menu" class=" dropdown-menu">
+									<li id="menu-item-339"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339">
+										<a title="About The Company" href="index.php/about/index.html">About The
+											Company</a></li>
+									<li id="menu-item-513"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513">
+										<a title="Management" href="index.php/management/index.html">Management</a></li>
+									<li id="menu-item-510"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510">
+										<a title="Geographic Reach"
+											href="index.php/geographic-reach/index.html">Geographic Reach</a></li>
+									<li id="menu-item-512"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512">
+										<a title="EHS" href="index.php/ehs/index.html">EHS</a></li>
+									<li id="menu-item-511"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511">
+										<a title="HR Practices" href="index.php/hr-practices/index.html">HR
+											Practices</a></li>
+									<li id="menu-item-509"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509">
+										<a title="Capabilities"
+											href="index.php/capabilities/index.html">Capabilities</a></li>
+									<li id="menu-item-508"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-508">
+										<a title="Infrastructure &amp; Logistics"
+											href="index.php/infrastructure-logistics/index.html">Infrastructure &#038;
+											Logistics</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-340"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-340"><a
+									title="Services" href="index.php/services/index.html">Services</a></li>
+							<li id="menu-item-341"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a
+									title="Projects" href="index.php/projects-portfolio/index.html">Projects</a></li>
+							<li id="menu-item-571"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-571"><a
+									title="Careers" href="index.php/careers/index.html">Careers</a></li>
+							<li id="menu-item-343"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a
+									title="Contact" href="index.php/contact/index.html">Contact</a></li>
+							<li class="social-icons">
+								<ul>
+
+
+									<li data-color="">
+
+										<a data-toggle="tooltip" data-placement="bottom" title="Facebook"
+											href="https://www.facebook.com/pages/DRN-Infra-Pvt-Ltd/274641322707598?fref=ts"><i
+												class="fa fa-facebook"></i></a>
+
+									</li>
+
+
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</nav>
+			</div>
+			<!--/.container-fluid -->
+		</header><!-- end header -->
+
+
+
+
+
+
+
+
+		<div class="white-bg">
+			<br/>
+				<div class="row">
+					<div class="col-sm-12 col-md-9">
+					<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+				style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:675px;">
+				<!-- START REVOLUTION SLIDER 4.6.5 fullwidth mode -->
+											<div id="rev_slider_1_1" class="rev_slider fullwidthabanner"
+					style="display:none;max-height:675px;height:675px;">
+					<ul>
+					
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="7" data-masterspeed="300"
+							data-saveperformance="off">
+							<!-- MAIN IMAGE -->
+							<img src="wp-content/uploads/2015/09/slide9.jpg" alt="slide9" data-bgposition="center top"
+								data-bgfit="cover" data-bgrepeat="no-repeat">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption medium_bg_orange tp-fade tp-resizeme rs-parallaxlevel-0" data-x="370"
+								data-y="422" data-speed="300" data-start="500" data-easing="Power3.easeInOut"
+								data-splitin="none" data-splitout="none" data-elementdelay="0.1"
+								data-endelementdelay="0.1" data-endspeed="300"
+								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Won
+								Accolades in Large Railway Projects
+							</div>
+						</li>
+						<!-- SLIDE  -->
+						<li data-transition="fade,boxfade" data-slotamount="7" data-masterspeed="300"
+							data-saveperformance="off">
+							<!-- MAIN IMAGE -->
+							<img src="wp-content/uploads/2015/09/slide8.jpg" alt="slide8" data-bgposition="center top"
+								data-bgfit="cover" data-bgrepeat="no-repeat">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption medium_bg_darkblue tp-fade tp-resizeme rs-parallaxlevel-0"
+								data-x="45" data-y="404" data-speed="300" data-start="500"
+								data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
+								data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
+								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Ideal
+								Partner For High Value National Infrastructure Projects
+							</div>
+						</li>
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="7" data-masterspeed="300"
+							data-saveperformance="off">
+							<!-- MAIN IMAGE -->
+							<img src="wp-content/uploads/2015/08/slide5.jpg" alt="slide5" data-bgposition="center top"
+								data-bgfit="cover" data-bgrepeat="no-repeat">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption modern_big_redbg tp-fade tp-resizeme rs-parallaxlevel-0" data-x="36"
+								data-y="328" data-speed="300" data-start="500" data-easing="Power3.easeInOut"
+								data-splitin="none" data-splitout="none" data-elementdelay="0.1"
+								data-endelementdelay="0.1" data-endspeed="300"
+								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Building Top
+								Class Roads in Hilly Areas
+							</div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer"></div>
+				</div>
+
+					</div>
+					</div><!-- END REVOLUTION SLIDER -->
+					
+					<div class="col-sm-12  col-md-3">
+					<section class=" general-row">
+
+						<div class="wpb_column col-md-12">
+
+
+
+							<section class="section-w clearfix">
+
+								<div class="container">
+
+								<div class="rows clearfix">
+								<p style="
+font-size: 4rem;
+    color: #5774b7 !important;
+    font-variant: small-caps;
+    font-variant: full-width;
+">Sister Company</p>
+								<div class=" bhoechie-tab-container">
+
+									<div class=" bhoechie-tab-menu">
+
+										<div class="list-group">
+
+											<a href='#' title='Road Construction'
+												class='list-group-item  text-center active'>PRN Motors</a> <a
+												href='#' title='Railway Projects'
+												class='list-group-item  text-center'>PRN JCB</a> <a href='#'
+												title='Bridge Projects' class='list-group-item  text-center'>Shodha Toyota</a> <a href='#' title='Dam Projects'
+												class='list-group-item  text-center'>Travel Inn</a> <a href='#'
+												title='Canal Projects' class='list-group-item  text-center'>PRN Infratech</a> <a href='#' title='Hotel Construction'
+												class='list-group-item  text-center'>View all/a>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div><!-- end row -->
+
+						</div><!-- end container -->
+
+					</section><!-- end section -->
+				</div>
+
+
+				<div class="clearfix"></div>
+				<div class="row">
+				</div>
+			</section>
+					</div>
+				</div>
+			
+			<section class=" general-row">
+
+				<div class="wpb_column col-md-12">
+
+					<div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+
+
+
+				</div>
+
+
+				<div class="clearfix"></div>
+
+			</section>
+
+
+			<section class=" general-row">
+
+				<div class="wpb_column col-md-12">
+
+					<div class="vc_custom_heading">
+						<h2 style="text-align: center;font-family:Abril Fatface;font-weight:400;font-style:normal">
+							Services Provided By Us</h2>
+					</div>
+
+				</div>
+
+
+				<div class="clearfix"></div>
+
+			</section>
+
+
+			<section class=" general-row">
+
+				<div class="wpb_column col-md-12">
+
+
+
+					<section class="section-w clearfix">
+
+						<div class="container">
+
+							<div class="row clearfix">
+
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container">
+
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 bhoechie-tab-menu">
+
+										<div class="list-group">
+
+											<a href='#' title='Road Construction'
+												class='list-group-item  text-center active'>Road Construction</a> <a
+												href='#' title='Railway Projects'
+												class='list-group-item  text-center'>Railway Projects</a> <a href='#'
+												title='Bridge Projects' class='list-group-item  text-center'>Bridge
+												Projects</a> <a href='#' title='Dam Projects'
+												class='list-group-item  text-center'>Dam Projects</a> <a href='#'
+												title='Canal Projects' class='list-group-item  text-center'>Canal
+												Projects</a> <a href='#' title='Hotel Construction'
+												class='list-group-item  text-center'>Hotel Construction</a>
+
+										</div>
+
+									</div>
+
+									<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bhoechie-tab">
+
+										<!-- flight section -->
+
+
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content active">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Road Construction" class="img-responsive"
+															width="" height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p><a href="wp-content/uploads/2015/08/road-tab.jpg"><img
+															class="size-medium wp-image-464 alignright"
+															src="wp-content/uploads/2015/08/road-tab-300x288.jpg"
+															alt="road-tab" width="300" height="288" /></a>Looking at the
+													boom of infrastructure sector in the country during the year 2000,
+													the firm entered into the road segment with adequate equipment like,
+													high capacity excavators, compactors, Hot Mix plants, Bituminous
+													Pavers with sensors, High capacity Crushers and state of art Mobile
+													Crusher tippers etc. at its disposal and achieved roaring success in
+													short period by ensuring timely completion of challenging and
+													prestigious projects of</p>
+												<ul>
+													<li>NHAI,</li>
+													<li>NH,</li>
+													<li>PWD,</li>
+													<li>KRDCL etc.,</li>
+												</ul>
+												<p>in stipulated period including major bridges and roads both in plain
+													and hilly terrain.</p>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Railway Projects" class="img-responsive"
+															width="" height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p><a href="wp-content/uploads/2015/08/railway-tab.jpg"><img
+															class="size-medium wp-image-465 alignright"
+															src="wp-content/uploads/2015/08/railway-tab-300x288.jpg"
+															alt="railway-tab" width="300" height="288" /></a>After
+													gaining confidence and experience the firm indulged in prestigious
+													and time bound project of prestigious Konkan Railway and
+													successfully completed the work of formation in cutting and as well
+													as in embankment with allied works such as major and minor bridges
+													in Konkan belt of Maharashtra with in stipulated period during the
+													year 1994.The Company received enormous appreciation from the Konkan
+													Railway Corporation for the quality of the work as well its
+													professional approach of completing the work within the given time
+													frames.</p>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Bridge Projects" class="img-responsive"
+															width="" height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p><a href="wp-content/uploads/2015/08/bridge-tab.jpg"><img
+															class="size-medium wp-image-461 alignright"
+															src="wp-content/uploads/2015/08/bridge-tab-300x288.jpg"
+															alt="bridge-tab" width="300" height="288" /></a>Construction
+													of Major Bridge across River Tungabhadra near haravi Village, in
+													Hadagali Tq. Bellary district. In the State of Karnataka under
+													interstate connectivity Scheme.</p>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Dam Projects" class="img-responsive" width=""
+															height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p><a href="wp-content/uploads/2015/08/dam-tab.jpg"><img
+															class="size-medium wp-image-463 alignright"
+															src="wp-content/uploads/2015/08/dam-tab-300x288.jpg"
+															alt="dam-tab" width="300" height="288" /></a>The work of
+													construction of Gated RCC Barrage, Intake pump house with associated
+													works across River Mun at Paras TPS for Paras (1X250MW)
+													Unit-expansion Project</p>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Canal Projects" class="img-responsive"
+															width="" height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p><a href="wp-content/uploads/2015/08/canal-tab.jpg"><img
+															class="wp-image-462 size-medium alignright"
+															src="wp-content/uploads/2015/08/canal-tab-300x288.jpg"
+															alt="canal-tab" width="300" height="288" /></a>Focussed
+													Execution of Irrigation Canals, completing major works of Canal such
+													as Earthwork, structures, CC lining etc of the following.</p>
+												<ul>
+													<li>Malaprabha Right Bank Canal &amp; Left Bank Canal,</li>
+													<li>Ghataprabha Right Bank Canal,</li>
+													<li>Narayanpur Left Bank Canal of Upper Krishna Project etc in
+														Karnataka.</li>
+												</ul>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+										<div class="bhoechie-tab-content">
+
+
+
+											<div class="row">
+
+												<div class="col-lg-8 col-md-8 col-xs-12">
+
+													<div class="media">
+
+
+													</div><!-- end media -->
+
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+
+													<div class="media">
+														<img src="#" alt="Hotel Construction" class="img-responsive"
+															width="" height="">
+
+													</div><!-- end media -->
+
+												</div>
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+											<div class="row">
+
+												<p>Construction of Star Hotels &amp; Resorts at Ideal Location <a
+														href="wp-content/uploads/2015/08/hotel-tab.jpg"><img
+															class="size-medium wp-image-467 alignright"
+															src="wp-content/uploads/2015/08/hotel-tab-300x288.jpg"
+															alt="hotel-tab" width="300" height="288" /></a></p>
+
+
+											</div><!-- end row -->
+
+											<br>
+
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+									</div>
+
+								</div>
+
+							</div><!-- end row -->
+
+						</div><!-- end container -->
+
+					</section><!-- end section -->
+
+
+
+
+
+				</div>
+
+
+				<div class="clearfix"></div>
+
+				<div class="row">
+
+				</div>
+
+			</section>
+
+
+
+
+			<section class=" general-row">
+
+				<div class="wpb_column col-md-12">
+
+
+					<section class="section-w clearfix">
+						<div class="container">
+							<div class="section-title leftside">
+								<h3>Latest Projects</h3>
+								<span class="divider"></span>
+								<nav class="portfolio-filter clearfix">
+									<ul>
+
+										<li><a class="active" href="#" data-filter="*"><span></span> All</a></li>
+										<li><a href="#" data-filter=".bridges">Bridges</a></li>
+
+										<li><a href="#" data-filter=".canals">Canals</a></li>
+
+										<li><a href="#" data-filter=".roads">Roads</a></li>
+
+										<li><a href="#" data-filter=".barrages">Barrages</a></li>
+
+										<li><a href="#" data-filter=".dams">Dams</a></li>
+
+
+									</ul>
+								</nav>
+							</div><!-- end section-title -->
+
+							<div class="section- clearfix">
+								<div class="masonry_wrapper row">
+
+
+
+									<div class="item item-h2 bridges ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/bridge-over-river-tunghabhadra/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/bridge4-289x230.jpg"
+													class="img-responsive wp-post-image" alt="bridge4" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/bridge-over-river-tunghabhadra/index.html"
+													title="Bridge Over River Tunghabhadra">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Bridge Over River Tunghabhadra</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/bridge-over-river-tunghabhadra/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 canals ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/feeder-canal/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/canal2-289x230.jpg"
+													class="img-responsive wp-post-image" alt="canal2" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/feeder-canal/index.html"
+													title="Feeder Canal">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Feeder Canal</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/feeder-canal/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 roads ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/state-highway-madikeri/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/road5-289x230.jpg"
+													class="img-responsive wp-post-image" alt="road5" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/state-highway-madikeri/index.html"
+													title="State Highway Madikeri">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>State Highway Madikeri</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/state-highway-madikeri/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 canals ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/feeder-canal-project-nagpur/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/weir1-289x230.jpg"
+													class="img-responsive wp-post-image" alt="weir1" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/feeder-canal-project-nagpur/index.html"
+													title="Feeder Canal Project-Nagpur">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Feeder Canal Project-Nagpur</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/feeder-canal-project-nagpur/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 barrages dams ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/paras-barrage-over-mun-river/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/dam3-289x230.jpg"
+													class="img-responsive wp-post-image" alt="dam3" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/paras-barrage-over-mun-river/index.html"
+													title="Chikotra Barrage Over Mun River">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Chikotra Barrage Over Mun River</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/paras-barrage-over-mun-river/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 bridges ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/major-bridge/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/bridge61-289x230.jpg"
+													class="img-responsive wp-post-image" alt="bridge6" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/major-bridge/index.html"
+													title="Major Bridge">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Major Bridge</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/major-bridge/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 barrages ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/weir-gated-barrage-warora/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/08/RAM_1064-2-289x230.jpg"
+													class="img-responsive wp-post-image" alt="RAM_1064-2" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/weir-gated-barrage-warora/index.html"
+													title="Weir Gated Barrage, Warora">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Weir Gated Barrage, Warora</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/weir-gated-barrage-warora/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 barrages dams ">
+										<div class="entry">
+											<a href="index.php/sh_portfolio/paras-barrage-over-mun-river-2/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/10/picfor27-289x230.png"
+													class="img-responsive wp-post-image" alt="picfor27" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/paras-barrage-over-mun-river-2/index.html"
+													title="Paras Barrage Over Mun River">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Paras Barrage Over Mun River</h3>
+											<p></p>
+											<a href="index.php/sh_portfolio/paras-barrage-over-mun-river-2/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class="item item-h2 canals ">
+										<div class="entry">
+											<a
+												href="index.php/sh_portfolio/kalsa-interconnecting-canal-project/index.html">
+
+												<img width="289" height="230"
+													src="wp-content/uploads/2015/10/Kalasa-Banduri-Project-289x230.jpg"
+													class="img-responsive wp-post-image" alt="Kalasa Banduri Project" />
+											</a>
+											<div class="magnifier">
+												<a href="index.php/sh_portfolio/kalsa-interconnecting-canal-project/index.html"
+													title="Kalsa Interconnecting Canal Project">
+													<span class="buttons">
+														<i class="fa fa-link"></i>
+													</span><!-- end buttons -->
+												</a>
+											</div><!-- end magnifier -->
+										</div>
+										<div class="desc">
+											<h3>Kalsa Interconnecting Canal Project</h3>
+											<p></p>
+											<a
+												href="index.php/sh_portfolio/kalsa-interconnecting-canal-project/index.html">
+												<span class="butto">
+													<i class="fa fa-picture-o"></i>
+												</span><!-- end buttons -->
+											</a>
+										</div>
+									</div>
+
+
+
+									<!-- end item -->
+								</div><!-- end masonry_wrapper -->
+							</div><!-- end row -->
+						</div><!-- end container -->
+					</section><!-- end section -->
+
+
+				</div>
+
+
+				<div class="clearfix"></div>
+
+			</section>
+
+
+			<section class=" section-w general-row">
+
+				<div class="wpb_column col-md-12">
+
+
+
+
+					<div class="section-title clearfix">
+
+						<div class="container">
+
+							<h3>Clients &amp; Partners</h3>
+
+							<span class="divider"></span>
+
+							<p>We offer High Quality Engineering &amp; Construction Services to The Following Customers
+							</p>
+
+						</div><!-- end container -->
+
+					</div><!-- end section -->
+
+					<div class="">
+
+						<div class="container">
+
+
+
+							<div class="wpb_column col-md-6">
+
+
+								<div class="row all-clients">
+
+
+									<div class="col-md-6 col-sm-6 first">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/KRDCl.jpg" class="img-responsive"
+													alt="" width="90" height="90" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+									<div class="col-md-6 col-sm-6 last">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/M-PWD.jpg" class="img-responsive"
+													alt="" width="96" height="96" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+									<div class="col-md-6 col-sm-6 first">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/MIDC.jpg" class="img-responsive"
+													alt="" width="102" height="121" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+									<div class="col-md-6 col-sm-6 last">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/KSHIP.jpg" class="img-responsive"
+													alt="" width="95" height="73" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+									<div class="col-md-6 col-sm-6 first">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/KONKANRAIL.jpg"
+													class="img-responsive" alt="" width="121" height="127" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+									<div class="col-md-6 col-sm-6 last">
+
+										<div class="client">
+
+											<figure class="effect-milo">
+
+
+												<img src="wp-content/uploads/2015/08/KNNL.jpg" class="img-responsive"
+													alt="" width="135" height="135" />
+
+												<figcaption>
+
+													<img src="#" class="img-responsive image" alt="" width=""
+														height="" />
+
+												</figcaption>
+
+											</figure>
+
+										</div><!-- end client -->
+
+									</div>
+
+
+
+
+								</div>
+
+
+
+							</div>
+							<div class="wpb_column col-md-6">
+
+
+
+
+
+
+
+
+								<div id="testimonial-slider">
+
+
+									<div class="testimonial">
+
+
+
+										<div class="text-block">
+
+											<p>Very prompt deliveries and commitment to deliver on promises at all
+												times, PRN Groups has always impressed me with their adherence to
+												schedules and completion time-frames.</p>
+
+											<div class="rating">
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+											</div><!-- end rating -->
+
+
+										</div>
+
+
+
+										<div class="title-block">
+
+											<h3>Project Engineer</h3>
+
+											<p>KRDCL</p>
+
+										</div>
+
+									</div>
+
+
+									<div class="testimonial">
+
+
+
+										<div class="text-block">
+
+											<p>PRN Groups is a very professionally managed  company , led by a dynamic
+												management with 3 decades of experience , working with them i learnt a
+												few things about construction , the company has a good depth of project
+												management skills for road &amp; bridge construction activities.</p>
+
+											<div class="rating">
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+												<i class="fa fa-star"></i>
+
+											</div><!-- end rating -->
+
+
+										</div>
+
+
+
+										<div class="title-block">
+
+											<h3>Project Manager</h3>
+
+											<p>NHAI</p>
+
+										</div>
+
+									</div>
+
+
+								</div>
+
+
+
+
+
+
+
+							</div>
+
+
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+				<div class="clearfix"></div>
+
+			</section>
+
+
+
+
+
+
+		</div>
+
+
+
+
+		<footer class="footer clearfix">
+
+			<div class="container">
+
+				<div class="row">
+
+
+
+
+
+
+				</div><!-- end row -->
+
+			</div><!-- end container -->
+
+		</footer><!-- end footer -->
+
+
+
+		<section class="copyrights text-center">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+
+
+					</div><!-- end col -->
+
+				</div><!-- end row -->
+
+			</div><!-- end container -->
+
+		</section><!-- end conpyrights -->
+
+
+
+		<div class="dmtop">Scroll to Top</div>
+
+
+
+	</div><!-- /#wrapper -->
+
+	<script type='text/javascript'
+		src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min0f0c.js?rev=4.6.5'></script>
+	<script type='text/javascript'
+		src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min0f0c.js?rev=4.6.5'></script>
+
+
+	<style scoped>
+		.tp-caption.small_text,
+		.small_text {
+			position: absolute;
+			color: #fff;
+			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 20px;
+			font-family: Arial;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space: nowrap
+		}
+
+		.tp-caption.medium_text,
+		.medium_text {
+			position: absolute;
+			color: #fff;
+			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 20px;
+			font-family: Arial;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space: nowrap
+		}
+
+		.tp-caption.large_text,
+		.large_text {
+			position: absolute;
+			color: #fff;
+			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 40px;
+			font-family: Arial;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space: nowrap
+		}
+
+		.tp-caption.modern_medium_fat_white,
+		.modern_medium_fat_white {
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 20px;
+			font-family: "Open Sans", sans-serif;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space: nowrap
+		}
+
+		.tp-caption.modern_big_bluebg,
+		.modern_big_bluebg {
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 800;
+			font-size: 30px;
+			line-height: 36px;
+			font-family: "Open Sans", sans-serif;
+			padding: 3px 10px;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			background-color: #4e5b6c;
+			letter-spacing: 0
+		}
+
+		.tp-caption.modern_big_redbg,
+		.modern_big_redbg {
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 36px;
+			font-family: "Open Sans", sans-serif;
+			padding: 3px 10px;
+			padding-top: 1px;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			background-color: #de543e;
+			letter-spacing: 0
+		}
+
+		.tp-caption.black,
+		.black {
+			color: #000;
+			text-shadow: none
+		}
+
+		.tp-caption.medium_bg_darkblue,
+		.medium_bg_darkblue {
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 800;
+			font-family: "Open Sans";
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			background-color: rgb(52, 73, 94);
+			padding: 10px;
+			border-width: 0px;
+			border-color: rgb(255, 214, 88);
+			border-style: none
+		}
+
+		.tp-caption.medium_bg_orange,
+		.medium_bg_orange {
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 800;
+			font-family: "Open Sans";
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			background-color: rgb(243, 156, 18);
+			padding: 10px;
+			border-width: 0px;
+			border-color: rgb(255, 214, 88);
+			border-style: none
+		}
+	</style>
+
+	<script type="text/javascript">
+		/******************************************
+					-	PREPARE PLACEHOLDER FOR SLIDER	-
+				******************************************/
+
+
+		var setREVStartSize = function () {
+			var tpopt = new Object();
+			tpopt.startwidth = 960;
+			tpopt.startheight = 675;
+			tpopt.container = jQuery('#rev_slider_1_1');
+			tpopt.fullScreen = "off";
+			tpopt.forceFullWidth = "off";
+
+			tpopt.container.closest(".rev_slider_wrapper").css({
+				height: tpopt.container.height()
+			});
+			tpopt.width = parseInt(tpopt.container.width(), 0);
+			tpopt.height = parseInt(tpopt.container.height(), 0);
+			tpopt.bw = tpopt.width / tpopt.startwidth;
+			tpopt.bh = tpopt.height / tpopt.startheight;
+			if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw;
+			if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh;
+			if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw;
+			if (tpopt.bh > 1) {
+				tpopt.bw = 1;
+				tpopt.bh = 1
+			}
+			if (tpopt.bw > 1) {
+				tpopt.bw = 1;
+				tpopt.bh = 1
+			}
+			tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth));
+			if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight;
+			if (tpopt.fullScreen == "on") {
+				tpopt.height = tpopt.bw * tpopt.startheight;
+				var cow = tpopt.container.parent().width();
+				var coh = jQuery(window).height();
+				if (tpopt.fullScreenOffsetContainer != undefined) {
+					try {
+						var offcontainers = tpopt.fullScreenOffsetContainer.split(",");
+						jQuery.each(offcontainers, function (e, t) {
+							coh = coh - jQuery(t).outerHeight(true);
+							if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight
+						})
+					} catch (e) {}
+				}
+				tpopt.container.parent().height(coh);
+				tpopt.container.height(coh);
+				tpopt.container.closest(".rev_slider_wrapper").height(coh);
+				tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);
+				tpopt.container.css({
+					height: "100%"
+				});
+				tpopt.height = coh;
+			} else {
+				tpopt.container.height(tpopt.height);
+				tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);
+				tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt
+					.height);
+			}
+		};
+
+		/* CALL PLACEHOLDER */
+		setREVStartSize();
+
+
+		var tpj = jQuery;
+		tpj.noConflict();
+		var revapi1;
+
+		tpj(document).ready(function () {
+
+			if (tpj('#rev_slider_1_1').revolution == undefined) {
+				revslider_showDoubleJqueryError('#rev_slider_1_1');
+			} else {
+				revapi1 = tpj('#rev_slider_1_1').show().revolution({
+					dottedOverlay: "none",
+					delay: 5000,
+					startwidth: 960,
+					startheight: 675,
+					hideThumbs: 200,
+
+					thumbWidth: 100,
+					thumbHeight: 50,
+					thumbAmount: 5,
+
+
+					simplifyAll: "off",
+
+					navigationType: "none",
+					navigationArrows: "solo",
+					navigationStyle: "round-old",
+
+					touchenabled: "on",
+					onHoverStop: "on",
+					nextSlideOnWindowFocus: "off",
+
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					drag_block_vertical: false,
+
+					parallax: "mouse",
+					parallaxBgFreeze: "off",
+					parallaxLevels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+
+
+					keyboardNavigation: "off",
+
+					navigationHAlign: "center",
+					navigationVAlign: "bottom",
+					navigationHOffset: 0,
+					navigationVOffset: 20,
+
+					soloArrowLeftHalign: "left",
+					soloArrowLeftValign: "center",
+					soloArrowLeftHOffset: 20,
+					soloArrowLeftVOffset: 0,
+
+					soloArrowRightHalign: "right",
+					soloArrowRightValign: "center",
+					soloArrowRightHOffset: 20,
+					soloArrowRightVOffset: 0,
+
+					shadow: 0,
+					fullWidth: "on",
+					fullScreen: "off",
+
+					spinner: "spinner5",
+
+					stopLoop: "off",
+					stopAfterLoops: -1,
+					stopAtSlide: -1,
+
+					shuffle: "off",
+
+					autoHeight: "off",
+					forceFullWidth: "off",
+
+
+
+					hideThumbsOnMobile: "off",
+					hideNavDelayOnMobile: 1500,
+					hideBulletsOnMobile: "off",
+					hideArrowsOnMobile: "off",
+					hideThumbsUnderResolution: 0,
+
+					hideSliderAtLimit: 0,
+					hideCaptionAtLimit: 0,
+					hideAllCaptionAtLilmit: 0,
+					startWithSlide: 0
+				});
+
+
+
+			}
+		}); /*ready*/
+	</script>
+
+
+	<link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css'
+		href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.3.24' type='text/css'
+		media='all' />
+	<script type='text/javascript' src='wp-content/themes/builder/js/bootstrap62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/jquery.prettyPhoto62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-includes/js/comment-reply.min2a8a.js?ver=4.3.24'></script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/custom62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/js_composer_frontd22c.js?ver=4.4.4'>
+	</script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/isotope62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/masonry62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/owl-scripts62ea.js?ver=1.2'></script>
+	<script type='text/javascript' src='wp-content/themes/builder/js/jquery.jigowatt62ea.js?ver=1.2'></script>
+
+</body>
+
+</html>
